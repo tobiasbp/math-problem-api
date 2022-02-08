@@ -22,5 +22,20 @@ async def root(
         ge=1,
         le=100,
     ),
+    min_number: int = Query(
+        1,
+        ge=1,
+        le=10000,
+    ),
+    max_number: int = Query(
+        1,
+        ge=1,
+        le=10000,
+    ),
 ):
-    return mg.simple_problems(op=op, no_of_problems=no_of_problems)
+    return mg.simple_problems(
+        op=op,
+        no_of_problems=no_of_problems,
+        min_number=min_number,
+        max_number=max_number,
+    )
