@@ -14,11 +14,6 @@ class ValidOperators(str, Enum):
     division = "div"
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
 @app.get("/v1/problem/math/simple/{op}")
 async def root(
     op: ValidOperators,
@@ -29,9 +24,3 @@ async def root(
     ),
 ):
     return mg.simple_problems(op=op, no_of_problems=no_of_problems)
-    # raise HTTPException(status_code=404, detail="Item not found")
-
-
-# @app.post("/v1/problem/math/simple/")
-# async def root(r: SimpleMathProblemRequest):
-#    return mg.simple_problems(**r.dict())
