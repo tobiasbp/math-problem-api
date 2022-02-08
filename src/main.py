@@ -28,7 +28,7 @@ async def root(
         le=10000,
     ),
     max_number: int = Query(
-        1,
+        100,
         ge=1,
         le=10000,
     ),
