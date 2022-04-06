@@ -3,7 +3,7 @@ A REST API for math problems. Developed with [FastAPI](https://fastapi.tiangolo.
 This API wraps the Python package [_math-problem-generator_](https://github.com/tobiasbp/math-problem-generator).
 
 See the documentation, and try out the latest versions of the API:
-* Development (Deployed on any oush to main branch): https://math-problem-api-dev.deta.dev/docs
+* Development (Deployed on any push to main branch): https://math-problem-api-dev.deta.dev/docs
 * Production (Deployed on release): https://math-problem-api-prod.deta.dev/docs
 
 
