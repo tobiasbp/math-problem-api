@@ -1,5 +1,5 @@
 name: Deploy to Deta (prod)
-on: push
+on: release
 
 jobs:
   deploy:
