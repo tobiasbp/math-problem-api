@@ -1,9 +1,11 @@
 # math-problem-api
 A REST API for math problems. Developed with [FastAPI](https://fastapi.tiangolo.com).
-See the documentation, and try out the latest development version of the
-API [here](https://ir9z2y.deta.dev/docs).
+This API wraps the Python package [_math-problem-generator_](https://github.com/tobiasbp/math-problem-generator).
 
-The API wraps the Python package [_math-problem-generator_](https://github.com/tobiasbp/math-problem-generator).
+See the documentation, and try out the latest versions of the API:
+* Development (Deployed on any oush to main branch): https://math-problem-api-dev.deta.dev/docs
+* Production (Deployed on release): https://math-problem-api-prod.deta.dev/docs
+
 
 # Development
 * Setup Python virtual environment: `python3 -m venv .venv`
