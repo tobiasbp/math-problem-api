@@ -1,4 +1,4 @@
-name: Deploy to Deta (dev)
+name: Deploy to Deta (prod)
 on: push
 
 jobs:
@@ -9,6 +9,6 @@ jobs:
       - uses: BogDAAAMN/deta-deploy-action@v1.0.1
         with:
           deta-access-token: ${{ secrets.DETA_TOKEN }} #Deta access token https://docs.deta.sh/docs/cli/auth
-          deta-name: "dev" #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
+          deta-name: "prod" #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
           deta-project: "math-problem-api" #Optional: Deta project name https://docs.deta.sh/docs/cli/commands/#deta-clone
           deta-project-dir: "src" #Optional: directory to be deployed on Deta. Default is the root "."
