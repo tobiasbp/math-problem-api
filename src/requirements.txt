@@ -1,2 +1,2 @@
-fastapi==0.75.1
+fastapi==0.76.0
 math-problem-generator==0.0.3
