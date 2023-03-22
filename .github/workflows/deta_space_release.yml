@@ -17,8 +17,8 @@ jobs:
           access_token: ${{ secrets.DETA_ACCESS_TOKEN }}
           project_id: ${{ secrets.DETA_PROJECT_ID }}
           # Push on push to main branch
-          space_push: ${{ github.event_name == "push" }}
+          space_push: ${{ github.event_name == 'push' }}
           # Release if the is a release
-          space_release: ${{ github.event_name == "release" }}
+          space_release: ${{ github.event_name == 'release' }}
           list_on_discovery: false
           release_version: ${{ github.event.release.tag_name }}
