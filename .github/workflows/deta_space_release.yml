@@ -1,8 +1,10 @@
-name: Release to Space
+name: Push/release to Deta Space
 
 on:
+  push:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   push-to-space:
@@ -14,7 +16,9 @@ jobs:
         with:
           access_token: ${{ secrets.DETA_ACCESS_TOKEN }}
           project_id: ${{ secrets.DETA_PROJECT_ID }}
-          space_push: true
-          space_release: true
+          # Push on push to main branch
+          space_push: ${{ github.event_name == "push" && github.ref == "main"}}
+          # Release if the is a release
+          space_release: ${{ github.event_name == "release" }}
           list_on_discovery: false
           release_version: ${{ github.event.release.tag_name }}
