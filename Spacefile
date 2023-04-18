@@ -9,3 +9,4 @@ micros:
       - "/v1/problem/math/simple/*"
       - "/openapi.json"
       - "/docs"
+    run: uvicorn main:app
